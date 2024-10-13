@@ -18,21 +18,21 @@ const projects = [
     description: 'A full-stack Empolyee Managemnt Using CURD operation with React and Node.js',
     tech: ['React', 'Node.js', 'MongoDB', 'Express'],
     demo: '#',
-    github: '#',
+    github: 'https://github.com/Gauravthkaur/Employee-Management-App',
   },
   {
     title: 'Task Management App',
     description: 'A productivity app for managing daily tasks and projects',
     tech: ['React', 'Firebase', 'Material-UI'],
-    demo: '#',
-    github: '#',
+    demo: 'https://vercel.com/gauravthkaurs-projects/user-management-system/CwRNnncBkndLfMQjpwpwmdL9Wgg9#',
+    github: '#https://github.com/Gauravthkaur/User-Management-System',
   },
   {
     title: 'Weather App',
     description: 'Real-time weather data visualization using external APIs',
     tech: ['React', 'OpenWeather API', 'ChartJS'],
-    demo: '#',
-    github: '#',
+    demo: 'https://weather-app-seven-psi-53.vercel.app/#',
+    github: 'https://github.com/Gauravthkaur/weather_app',
   },
 ];
 
@@ -435,7 +435,7 @@ export default function Portfolio() {
                 <a href="https://www.linkedin.com/in/gaurav-kumar-647109305/" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   <Linkedin size={20} />
                 </a>
-                <a href="mailto:gs35561@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <a href="mailto:gaurav079t@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   <Mail size={20} />
                 </a>
               </div>
