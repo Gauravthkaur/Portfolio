@@ -3,11 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/runtime": "^7.26.0",
     "@emailjs/browser": "^4.4.1",
     "@gsap/react": "^2.1.1",
+    "@lottiefiles/dotlottie-react": "^0.12.1",
+    "@react-three/drei": "^9.120.7",
+    "@react-three/fiber": "^8.17.12",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "babel-runtime": "^6.26.0",
     "framer-motion": "^11.11.8",
     "gsap": "^3.12.5",
     "lucide-react": "^0.447.0",
@@ -15,10 +20,12 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
+    "react-type-animation": "^3.2.0",
+    "react-typing-animation": "^1.6.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "npm start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
