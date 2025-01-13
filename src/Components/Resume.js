@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion,} from "framer-motion";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import { title } from 'framer-motion/client';
 
 
 const DownloadResumeAndFooter = () => {
