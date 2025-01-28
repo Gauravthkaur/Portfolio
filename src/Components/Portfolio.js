@@ -5,6 +5,7 @@ import { Briefcase, GraduationCap, Coffee } from 'lucide-react';
 import emailjs from '@emailjs/browser'
 import { TypeAnimation } from 'react-type-animation';
 import Resume from './Resume';
+
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 const Portfolio = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -532,7 +533,7 @@ const Portfolio = () => {
                 onClick={() => setDarkMode(!darkMode)}
                 className="p-2 rounded-full bg-gray-100 dark:bg-gray-800"
               >
-                {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+                {darkMode ? <Sun className="w-5 h-5 text-white " /> : <Moon className="w-5 h-5" />}
               </motion.button>
             </div>
           </div>
@@ -706,9 +707,9 @@ const Portfolio = () => {
                   sequence={[
                     'I`am Full Stack Developer',
                     1000,
-                    'I turn logic into elegant, scalable web solutions',
+                    'I am Programer',
                     1000,
-                    'I am  Sweatologist',
+                    'I am Reps-Buster',
                     1000,
                   ]}
                   wrapper="span"
@@ -817,6 +818,7 @@ const Portfolio = () => {
         {/* Additional sections would go here... */}
         <SkillsSection ref={sectionRefs.skills} />
         <ContactForm />
+        
         <Resume />
       </div>
     </div>

@@ -1,10 +1,11 @@
-import Portfolio from './Components/Portfolio'; // or the correct path
+
+import  Loader from './Components/Loader';
 
 
 function App() {
   return (
     <div>
-      <Portfolio />
+      <Loader />
      
     </div>
   );
