@@ -78,3 +78,24 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* styles for desktop devices */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* styles for mobile devices */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+
+/* styles for smaller mobile devices */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+}

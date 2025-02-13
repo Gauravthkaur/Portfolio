@@ -27,7 +27,7 @@ const LoadingScreen = () => {
         await next({ boxShadow: "0 0 10px rgba(255, 255, 255, 0.3)" });
       }
     },
-    config: { duration: 1500 },
+    config: { duration: 1500, ease: 'ease-in-out' },
   });
 
   useEffect(() => {
@@ -58,6 +58,8 @@ const LoadingScreen = () => {
         setLoadingComplete(true);
         dotsTimeline.kill(); // Stop the dots animation when loading completes
       },
+      ease: 'ease-in-out',
+      duration: 0.6,
     });
 
     // Enhanced progress bar animation sequence
