@@ -7,23 +7,23 @@ const ScrollMotionProjects = () => {
       title: 'Employee Management System',
       description: 'A full-stack Employee Management System using CRUD operations with React and Node.js. Streamline HR processes with features for employee data management, attendance tracking, and performance monitoring.',
       tech: ['React', 'Node.js', 'MongoDB', 'Express'],
-      demo: '#',
-      github: 'https://github.com/Gauravthkaur/Employee-Management-App',
+      demo: 'https://employee-management-system-o4sxi58f3-gauravthkaurs-projects.vercel.app',
+      github: 'https://github.com/Gauravthkaur/Employee-Management-System',
       color: 'from-blue-500 to-cyan-500'
     },
     {
-      title: 'Task Management App',
-      description: 'A productivity app for managing daily tasks and projects. Features include task categorization, due dates, priority levels, and progress tracking to boost personal and team productivity.',
+      title: 'User Management App',
+      description: 'A productivity app for managing daily User and Their Detail. Using complete CRUD operations with MongoDB. Features include user authentication, data storage, and real-time updates.',
       tech: ['React', 'Firebase', 'Material-UI'],
-      demo: '#',
+      demo: 'https://user-management-system-delta.vercel.app',
       github: 'https://github.com/Gauravthkaur/User-Management-System',
       color: 'from-purple-500 to-pink-500'
     },
     {
-      title: 'Weather App',
+      title: 'Advanced Weather App',
       description: 'Real-time weather data visualization using external APIs. Get accurate weather forecasts, interactive maps, and detailed meteorological data with a clean, intuitive interface.',
       tech: ['React', 'OpenWeather API', 'ChartJS'],
-      demo: '#',
+      demo: 'https://weather-app-seven-psi-53.vercel.app',
       github: 'https://github.com/Gauravthkaur/weather_app',
       color: 'from-green-500 to-teal-500'
     }
