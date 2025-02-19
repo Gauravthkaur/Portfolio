@@ -36,7 +36,7 @@ const DownloadResumeAndFooter = () => {
               viewport={{ once: true }}
               className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 mb-6"
             >
-              Ready to Learn More?
+              Curious to know more about me? Let's dive in!
             </motion.h2>
             <motion.p
               initial={{ opacity: 0 }}
