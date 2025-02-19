@@ -66,13 +66,6 @@ const Portfolio = () => {
       github: 'https://github.com/Gauravthkaur/weather_app',
     },
     {
-      title: 'Rock Paper Scessor Game',
-      description: ' Rock, Paper, Scissors game implemented with HTML (21.1%), CSS (34.3%), and JavaScript (44.6%)',
-      tech: ['React', 'OpenWeather API', 'ChartJS'],
-      demo: 'https://github.com/Gauravthkaur/Rock_Paper_seccior_game',
-      github: 'https://github.com/Gauravthkaur/weather_app',
-    },
-    {
       title: 'Morder-Website UI ',
       description: 'Modern, responsivewebsite  built with HTML (49.9%), CSS (46.4%), and JavaScript (3.7%).',
       tech: ['React', 'OpenWeather API', 'ChartJS'],
