@@ -48,8 +48,8 @@ const Portfolio = () => {
       title: 'Employee Management System',
       description: 'A full-stack Employee Management System using CRUD operations with React and Node.js',
       tech: ['React', 'Node.js', 'MongoDB', 'Express'],
-      demo: 'https://employee-management-system-a5y1v2g8i-gauravthkaurs-projects.vercel.app',
-      github: 'https://github.com/Gauravthkaur/Employee-Management-App',
+      demo: 'https://employee-management-system-theta-lac.vercel.app',
+      github: 'https://github.com/Gauravthkaur/Employee-Management-System',
     },
     {
       title: 'User Management App',
