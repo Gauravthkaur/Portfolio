@@ -183,75 +183,73 @@ const Portfolio = () => {
     const [formStatus, setFormStatus] = useState('');
     const formRef = useRef(null);
 
-    const handleSubmit = (e) => {
-      e.preventDefault();
+const handleSubmit = (e) => {
+    e.preventDefault();
 
-      // Get form elements
-      const form = e.target;
-      const nameInput = form.elements.name;
-      const emailInput = form.elements.email;
-      const subjectInput = form.elements.subject;
-      const messageInput = form.elements.message;
+    // Get form elements
+    const form = e.target;
+    const nameInput = form.elements.name;
+    const emailInput = form.elements.email;
+    const subjectInput = form.elements.subject;
+    const messageInput = form.elements.message;
 
-      // Validate inputs
-      const name = nameInput.value.trim();
-      const email = emailInput.value.trim();
-      const subject = subjectInput.value.trim();
-      const message = messageInput.value.trim();
+    // Validate inputs
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const subject = subjectInput.value.trim();
+    const message = messageInput.value.trim();
 
-      
-      // Validate form
-      if (!name || !email || !subject || !message) {
-        setFormStatus('error');
-        return;
-      }
-      // Email validation regex
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    // Validate form
+    if (!name || !email || !subject || !message) {
+      setFormStatus('error');
+      return;
+    }
+    // Email validation regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 
-      if (!emailRegex.test(email)) {
-        setFormStatus('invalid-email');
-        return;
-      }
+    if (!emailRegex.test(email)) {
+      setFormStatus('invalid-email');
+      return;
+    }
 
-      // Set sending status
-      setFormStatus('sending');
+    // Set sending status
+    setFormStatus('sending');
 
-      // Send email using EmailJS
-      emailjs
-        .sendForm(
-          'service_69ack9p',
-          'template_9su4hiy',
-          formRef.current,
-          {
-            publicKey: '61L9jgIKZHwYDmVnm',
-          }
-        )
-        .then(
-          (response) => {
-            // Successful submission
-            setFormStatus('success');
+    // Send email using EmailJS
+    emailjs
+      .sendForm(
+        'service_69ack9p',
+        'template_9su4hiy',
+        formRef.current,
+        '61L9jgIKZHwYDmVnm'
+      )
+      .then(
+        (_response) => {
+          // Successful submission
+          setFormStatus('success');
 
-            // Reset form
-            formRef.current.reset();
+          // Reset form
+          formRef.current.reset();
 
-            // Clear status after 3 seconds
-            setTimeout(() => {
-              setFormStatus('');
-            }, 3000);
-          },
-          (error) => {
-            // Error handling
-            console.error('Email send failed:', error);
-            setFormStatus('send-error');
+          // Clear status after 3 seconds
+          setTimeout(() => {
+            setFormStatus('');
+          }, 3000);
+        },
+        (error) => {
+          // Error handling
+          console.error('Email send failed:', error);
+          setFormStatus('send-error');
 
-            // Clear error status after 3 seconds
-            setTimeout(() => {
-              setFormStatus('');
-            }, 3000);
-          }
-        );
-    };
+          // Clear error status after 3 seconds
+          setTimeout(() => {
+            setFormStatus('');
+          }, 3000);
+        }
+      );
+  };
 
     return (
       <section className="min-h-screen py-20 px-6 relative overflow-hidden bg-gray-100 dark:bg-gray-900 "
